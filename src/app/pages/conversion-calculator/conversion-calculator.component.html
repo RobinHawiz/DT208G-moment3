@@ -1,0 +1,59 @@
+<app-header />
+<main>
+  <h1>Conversion calulculator</h1>
+  <form>
+    <h2>Temperature Conversion</h2>
+
+    <div class="input-box">
+      <label for="celcius">Celsius</label>
+      <input
+        type="number"
+        id="celcius"
+        name="celcius"
+        [(ngModel)]="celcius"
+        (keyup)="convertFahrenheit(celcius)"
+      />
+    </div>
+
+    <span>=</span>
+
+    <div class="input-box">
+      <label for="fahrenheit">Fahrenheit</label>
+      <input
+        type="number"
+        id="fahrenheit"
+        name="fahrenheit-451"
+        [(ngModel)]="fahrenheit"
+        (keyup)="convertCelcius(fahrenheit)"
+      />
+    </div>
+  </form>
+
+  <form>
+    <h2>Distance Conversion</h2>
+
+    <div class="input-box">
+      <label for="meter">Meter</label>
+      <input
+        type="number"
+        id="meter"
+        name="meter"
+        [(ngModel)]="meter"
+        (keyup)="convertFoot(meter)"
+      />
+    </div>
+
+    <span>=</span>
+
+    <div class="input-box">
+      <label for="foot">Foot</label>
+      <input
+        type="number"
+        id="foot"
+        name="foot"
+        [(ngModel)]="foot"
+        (keyup)="convertMeter(foot)"
+      />
+    </div>
+  </form>
+</main>

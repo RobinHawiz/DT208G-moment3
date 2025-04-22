@@ -1,0 +1,7 @@
+:not(nav) > ul {
+  margin-bottom: 1.5rem;
+  list-style: none;
+  li::before {
+    content: "-";
+  }
+}

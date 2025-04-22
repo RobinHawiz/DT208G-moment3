@@ -1,0 +1,24 @@
+@use "../abstract/mixin" as m;
+@use "../abstract/variable" as v;
+
+body {
+  font-family: "Source Code Pro", monospace, sans-serif;
+  font-size: v.$regular-font;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-size: v.$regular-font;
+}
+
+input,
+textarea,
+button {
+  font-family: "Source Code Pro", monospace, sans-serif;
+  font-size: v.$regular-font;
+}
+
+.bold {
+  font-weight: 700;
+}
