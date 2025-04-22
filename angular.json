@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/dt208-g-moment3",
+            "outputPath": "dist/DT208G-moment3",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
