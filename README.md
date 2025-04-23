@@ -1,59 +1,31 @@
-# DT208GMoment3
+# DT208G Moment 3
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
+This project was created using [Angular](https://angular.dev/) version 19.2.8.
 
-## Development server
+### Implemented Features:
 
-To start a local development server, run:
+- **Responsive Design** — The site adapts well across screen sizes.
 
-```bash
-ng serve
-```
+- **Three Pages** — Home, About, and Conversion Calculator. The homepage includes one image.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Conversion Calculator** — Allows users to convert between different units: from meters to feet and from celsius to fahrenheit (and vice versa). This functionality is implemented using Angular components and data binding.
 
-## Code scaffolding
+- **About Page** — Describes the process of completing the assignment, how the tasks were solved, and the conclusions drawn.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Navigation System** — A well-functioning navigation system built using Angular's RouterModule enables users to navigate between subpages.
 
-```bash
-ng generate component component-name
-```
+- **Reusable Component** — The header is a shared component displayed on all subpages. Technically, this could have been placed directly in `app.component.html`, but since the assignment required a component to be used by a page component, this was the most logical choice under those constraints. If the calculator used a button component, or if I'd created a separate form component, I could have used one of those instead.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Styling with SCSS** — All styling is written using SCSS. Global styles are organized in the `styles/` folder and imported via `styles.scss`. More specific styles are applied at the component level, primarily for the header. If this app were to grow, I would likely split out more styles into their respective component files.
 
-```bash
-ng generate --help
-```
+- **Source Code & Versioning** — The code is version-controlled with Git and published on GitHub.
 
-## Building
+- **Live Deployment** — The finished, optimized site is deployed via GitHub Pages 👉 [robinhawiz.github.io/DT208G-moment3/](https://robinhawiz.github.io/DT208G-moment3/)
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+### Note on Hosting
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Deploying to GitHub Pages was a bit hacky, as it’s intended for static sites. Angular apps are dynamic, and I had to implement workarounds (like copying `index.html` to `404.html`) to make routing and deep links function correctly. For now, this setup works, but for the main project, I plan to use a more appropriate host like Firebase or Netlify.
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
